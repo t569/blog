@@ -5,9 +5,12 @@ description: "Systems Engineer, Polymath, and lifelong learner."
 
 # Obrike Oghenekome Timothy
 
+[📄 **Download My Resume (PDF)**](assets/Obrike-Oghenekome-Timothy-Resume.pdf)
+
 Welcome to my digital garden! 🌱
 
-I am a systems engineer and polymath who operates best at the extremes. For me, engineering isn't just about staying comfortably in the application layer. It is about understanding the entire spectrum. I bounce between writing compilers, simulating CPU schedulers, architecting cloud sandboxes, and diving into theoretical physics. 
+I am a systems engineer and polymath who operates best at the extremes. 
+I am currently in my fourth year (400-level) studying Computer Engineering at [Nile University of Nigeria](https://www.nileuniversity.edu.ng/), where I balance formal academics with building tools to solve my own bottlenecks.For me, engineering isn't just about staying comfortably in the application layer. It is about understanding the entire spectrum. I bounce between writing compilers, simulating CPU schedulers, architecting cloud sandboxes, and diving into theoretical physics. 
 
 Recently, an academic excursion to the **Dangote Refineries** turned into an upcoming internship offer—a fun story of geeking out over physical infrastructure that actually paid off! I am currently sorting out the logistics, but this garden is where I will be documenting that journey, alongside my technical projects, research papers, and random late-night thoughts.
 
@@ -49,4 +52,3 @@ Right now, this space is my personal wiki, but I am actively working on adding a
 
 **Reach out:** [Email](mailto:timothyobrike@gmail.com) | [LinkedIn](https://www.linkedin.com/in/oghenekome-obrike/) | [GitHub](https://github.com/t569)
 
-[📄 **Download My Resume (PDF)**](assets/Obrike-Oghenekome-Timothy-Resume.pdf)

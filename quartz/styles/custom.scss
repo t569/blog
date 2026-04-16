@@ -15,18 +15,6 @@
   }
 }
 
-/* Add a glowing effect to the graph container */
-#graph-container {
-  border-radius: 12px;
-  background-color: var(--highlight);
-  border: 1px solid transparent;
-  transition: border-color 0.3s ease;
-
-  &:hover {
-    border-color: var(--tertiary);
-  }
-}
-
 /* Make internal popover links pop */
 .internal > a {
   font-weight: 600;
@@ -58,4 +46,48 @@ blockquote {
   color: var(--dark);
   box-shadow: 0 0 8px var(--tertiary);
   transition: all 0.2s ease;
+}
+
+/* ==========================================
+   THE CONSTELLATION GRAPH AESTHETIC (FIXED)
+   ========================================== */
+
+#graph-container {
+  /* Give the graph box a faint border and deep space background */
+  border: 1px solid rgba(88, 166, 255, 0.1);
+  border-radius: 12px; 
+  background: radial-gradient(circle at center, #0a0d14 0%, #05050a 100%);
+}
+
+/* Add the breathing/twinkling animation for the stars */
+@keyframes twinkle {
+  0%   { filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 6px rgba(88, 166, 255, 0.4)); opacity: 0.8; }
+  100% { filter: drop-shadow(0 0 4px rgba(255, 255, 255, 1)) drop-shadow(0 0 12px rgba(88, 166, 255, 0.9)); opacity: 1; }
+}
+
+/* Removed the strict '>' selector so it finds the elements inside the <g> tag */
+#graph-container svg {
+  
+  /* 1. The Stars (Nodes) */
+  circle {
+    /* Apply the animation to all stars */
+    animation: twinkle 3s infinite alternate ease-in-out;
+    transition: all 0.3s ease;
+  }
+
+  /* When hovering, the star goes supernova (pauses the twinkle and locks to max brightness) */
+  circle:hover {
+    animation: none;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 1)) 
+            drop-shadow(0 0 20px rgba(88, 166, 255, 1)) !important;
+  }
+
+  /* 2. The Constellation Lines (Edges) */
+  line {
+    /* Force the lines to be faint, thin, and dashed */
+    stroke: rgba(255, 255, 255, 0.25) !important;
+    stroke-width: 0.8px !important;
+    stroke-dasharray: 2, 4 !important; 
+    transition: stroke-width 0.3s ease;
+  }
 }
