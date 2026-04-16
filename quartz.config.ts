@@ -40,15 +40,15 @@ const config: QuartzConfig = {
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#0d1117", // GitHub Dark background
+          lightgray: "#30363d", // Subtle borders
+          gray: "#8b949e", // Muted text
+          darkgray: "#c9d1d9", // Standard text
+          dark: "#f0f6fc", // Bold text/headings
+          secondary: "#58a6ff", // Bright blue links (like VS Code)
+          tertiary: "#3fb950", // Success green accents
+          highlight: "rgba(88, 166, 255, 0.15)", // Subtle blue highlight
+          textHighlight: "rgba(88, 166, 255, 0.3)",
         },
       },
     },
