@@ -4,7 +4,6 @@ description: "Systems Engineer, Polymath, and lifelong learner."
 ---
 
 # Obrike Oghenekome Timothy
-*Computer Engineering | ID: 20220352*
 
 Welcome to my digital garden! 🌱
 
@@ -48,4 +47,6 @@ When I am not obsessing over system architecture, I am analyzing game mechanics.
 ### Let's Connect
 Right now, this space is my personal wiki, but I am actively working on adding a discussion space. My goal is to build a collaborative hub where we can debate theories, share design docs, and build things the right way.
 
-**Reach out:** [Email](timothyobrike@gmail.com) | [LinkedIn](https://www.linkedin.com/in/oghenekome-obrike/) | [GitHub](https://github.com/t569)
+**Reach out:** [Email](mailto:timothyobrike@gmail.com) | [LinkedIn](https://www.linkedin.com/in/oghenekome-obrike/) | [GitHub](https://github.com/t569)
+
+[📄 **Download My Resume (PDF)**](assets/Obrike-Oghenekome-Timothy-Resume.pdf)
