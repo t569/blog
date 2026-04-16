@@ -5,11 +5,17 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    // The Submitter sits at the bottom of the main content area.
+    // It remains completely invisible on all pages except /admin.
+    Component.ResourceSubmitter(),
+  ],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      "GitHub (t569)": "https://github.com/t569",
+      "Twitter": "https://x.com/ObrikeT",
+      "Digital Garden Node": "https://github.com/t569/blog",
+      "Vector API (Render)": "https://github.com/t569/resource-api",
     },
   }),
 }
@@ -44,10 +50,14 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    
+    // --- The Constellation Vector Widgets ---
+    // The Search Explorer stays on the right sidebar globally
+    Component.ResourceExplorer(),
   ],
 }
 
-// components for pages that display lists of pages  (e.g. tags or folders)
+// components for pages that display lists of pages (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
@@ -64,5 +74,9 @@ export const defaultListPageLayout: PageLayout = {
     }),
     Component.Explorer(),
   ],
-  right: [],
+  right: [
+    // Adding the search widget here ensures it remains accessible 
+    // even when browsing through folder or tag list pages.
+    Component.ResourceExplorer(),
+  ],
 }
