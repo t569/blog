@@ -19,4 +19,3 @@ When a new architectural resource or piece of documentation is staged below, the
 ### Staging Terminal
 Use the terminal below to submit new resources into the pending queue.
 
-# SERVERS ARE CURRENTLY DOWN!!! WE WILL GET IT UP AND RUNNING SOON!
