@@ -54,6 +54,7 @@ if (!window._vectorGraphPatched) {
                             const displayTitle = n.name + " 🟢"; 
                             localData[n.id] = {
                                 title: displayTitle,
+                                content: n.description || "",
                                 tags: [],
                                 links: []
                             };
