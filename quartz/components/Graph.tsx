@@ -1,9 +1,14 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 // @ts-ignore
 import script from "./scripts/graph.inline"
+// @ts-ignore
+import vectorScript from "./scripts/vector-injector.inline"
 import style from "./styles/graph.scss"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
+
+
+
 
 export interface D3Config {
   drag: boolean
@@ -103,6 +108,9 @@ export default ((opts?: Partial<GraphOptions>) => {
   }
 
   Graph.css = style
+  // Intercepts the network in the <head> before Quartz can make requests
+  Graph.beforeDOMLoaded = vectorScript 
+  // Draws the actual Pixi.js Graph in the <body>
   Graph.afterDOMLoaded = script
 
   return Graph
