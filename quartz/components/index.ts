@@ -26,6 +26,7 @@ import ConditionalRender from "./ConditionalRender"
 
 import ResourceSubmitter from "./ResourceSubmitter"
 import ResourceExplorer from "./ResourceExplorer"
+import ResourceGraph from "./ResourceGraph"
 
 export {
   ArticleTitle,
@@ -57,3 +58,4 @@ export {
 
 export { default as ResourceSubmitter } from './ResourceSubmitter';
 export { default as ResourceExplorer } from './ResourceExplorer';
+export { default as ResourceGraph } from './ResourceGraph';
