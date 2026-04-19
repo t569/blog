@@ -24,9 +24,7 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 
-import ResourceSubmitter from "./ResourceSubmitter"
-import ResourceExplorer from "./ResourceExplorer"
-import ResourceGraph from "./ResourceGraph"
+
 
 export {
   ArticleTitle,
@@ -56,6 +54,6 @@ export {
   ConditionalRender,
 }
 
-export { default as ResourceSubmitter } from './ResourceSubmitter';
-export { default as ResourceExplorer } from './ResourceExplorer';
 export { default as ResourceGraph } from './ResourceGraph';
+export { default as CloudSearch } from './CloudSearch';
+export { default as AdminPanel } from './AdminPanel';

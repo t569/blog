@@ -6,10 +6,9 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
-    // The Submitter sits at the bottom of the main content area.
-    // It remains completely invisible on all pages except /admin.
-    Component.ResourceSubmitter(),
-  ],
+    Component.CloudSearch(),
+    Component.AdminPanel()
+  ], // Cleaned out the Submitter
   footer: Component.Footer({
     links: {
       "GitHub (t569)": "https://github.com/t569",
@@ -36,10 +35,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
+        { Component: Component.Search(), grow: true },
         { Component: Component.Darkmode() },
         { Component: Component.ReaderMode() },
       ],
@@ -50,10 +46,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
-    
-    // --- The Constellation Vector Widgets ---
-    // The Search Explorer stays on the right sidebar globally
-    Component.ResourceExplorer(),
   ],
 }
 
@@ -74,9 +66,5 @@ export const defaultListPageLayout: PageLayout = {
     }),
     Component.Explorer(),
   ],
-  right: [
-    // Adding the search widget here ensures it remains accessible 
-    // even when browsing through folder or tag list pages.
-    Component.ResourceExplorer(),
-  ],
+  right: [], // Cleaned out the Resource Explorer
 }
